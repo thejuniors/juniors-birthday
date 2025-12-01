@@ -15,10 +15,6 @@ const client = new Client({
 });
 
 client.once("clientReady", () => {
-
-  const channel = client.channels.cache.get(CHANNEL_ID);
-  if (channel) channel.send("🤖 Bot iniciado com sucesso! Teste OK.");
-
   // Executa todo dia às 8h
   cron.schedule("0 8 * * *", () => {
     const today = new Date();
@@ -32,8 +28,8 @@ client.once("clientReady", () => {
     birthdays.forEach(user => {
       if (user.birthday === todayStr) {
         channel.send(
-          `🎉 **Hoje é aniversário do(a) <@${user.id}>!** 🎂  
-Marquem ele(a) e mandem os parabéns! 🚀`
+          `@everyone 🎉 **Hoje é aniversário do(a) <@${user.id}>!** 🎂  
+Mandem os parabéns pra essa pessoa incrível! 🚀`
         );
       }
     });
