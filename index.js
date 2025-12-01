@@ -17,7 +17,7 @@ const client = new Client({
 client.once("clientReady", () => {
   console.log(`Bot online como ${client.user.tag}`);
 
-  // Executa todo dia às 9h
+  // Executa todo dia às 8h
   cron.schedule("0 8 * * *", () => {
     const today = new Date();
     const day = today.getDate().toString().padStart(2, "0");
