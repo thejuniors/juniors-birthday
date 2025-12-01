@@ -15,7 +15,9 @@ const client = new Client({
 });
 
 client.once("clientReady", () => {
-  console.log(`Bot online como ${client.user.tag}`);
+
+  const channel = client.channels.cache.get(CHANNEL_ID);
+  if (channel) channel.send("🤖 Bot iniciado com sucesso! Teste OK.");
 
   // Executa todo dia às 8h
   cron.schedule("0 8 * * *", () => {
