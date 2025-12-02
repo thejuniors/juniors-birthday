@@ -12,8 +12,6 @@ const client = new Client({
 });
 
 client.once("clientReady", () => {
-  console.log("Bot iniciado!");
-
   dailyBirthday(client);
   ogWarnings(client);
 });

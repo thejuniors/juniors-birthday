@@ -27,14 +27,23 @@ export function daysUntil(dateStr) {
   return Math.ceil(diff / (1000 * 60 * 60 * 24));
 }
 
-export function formatBirthdayMessage(user) {
+export function getAge(user) {
+  if (!user.year) return null;
+
   const today = new Date();
-  const age = user.year ? today.getFullYear() - user.year : null;
+  return today.getFullYear() - user.year;
+}
+
+export function formatBirthdayMessage(user) {
+  const age = getAge(user);
   const mention = user.id ? `<@${user.id}>` : user.name;
 
-  if (age)
-    return `@everyone 🎉 **Hoje é aniversário de ${mention}!** 🎂  
-Ele(a) está fazendo **${age} anos**! 🎉`;
+  if (age) {
+    return (
+      `@everyone 🎉 **Hoje é aniversário de ${mention}!** 🎂\n` +
+      `Ele(a) está fazendo **${age} anos**! 🎉`
+    );
+  }
 
   return `@everyone 🎉 **Hoje é aniversário de ${mention}!** 🎂`;
 }
