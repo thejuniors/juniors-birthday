@@ -1,77 +1,96 @@
 [
   {
-    "id": "maria",
     "name": "Maria",
-    "birthday": "12-01"
+    "birthday": "12-01",
+    "og": false
   },
   {
     "id": "509406859023613976",
     "name": "Victor",
-    "birthday": "30-03"
+    "birthday": "30-03",
+    "year": 1999,
+    "og": true
   },
   {
     "id": "288112300181946373",
     "name": "Elixir",
-    "birthday": "07-05"
+    "birthday": "07-05",
+    "year": 2001,
+    "og": true
   },
   {
     "id": "890835116186828852",
     "name": "Rodz",
-    "birthday": "21-06"
+    "birthday": "21-06",
+    "year": 2001,
+    "og": true
   },
   {
     "id": "423927323323138049",
     "name": "Josoe",
-    "birthday": "22-06"
+    "birthday": "22-06",
+    "og": false
   },
   {
-    "id": "gyovanna",
     "name": "Gyovanna",
-    "birthday": "10-07"
+    "birthday": "10-07",
+    "og": false
   },
   {
     "id": "233697028444520448",
     "name": "Ranieri",
-    "birthday": "16-08"
+    "birthday": "16-08",
+    "year": 2002,
+    "og": true
   },
   {
     "id": "401759897382813696",
     "name": "Pedro Canela",
-    "birthday": "02-09"
+    "birthday": "02-09",
+    "og": false
   },
   {
-    "id": "samanta",
     "name": "Samanta",
-    "birthday": "14-10"
+    "birthday": "14-10",
+    "og": false
   },
   {
     "id": "217822519300849664",
     "name": "Pedro",
-    "birthday": "15-11"
+    "birthday": "15-11",
+    "year": 2000,
+    "og": true
   },
   {
-    "id": "gabriela",
     "name": "Gabriela",
-    "birthday": "16-11"
+    "birthday": "16-11",
+    "og": false
   },
   {
     "id": "302830707141640193",
     "name": "Henrique",
-    "birthday": "18-11"
+    "birthday": "18-11",
+    "year": 2002,
+    "og": true
   },
   {
     "id": "266177232416931840",
     "name": "Diego",
-    "birthday": "07-12"
+    "birthday": "07-12",
+    "year": 1994,
+    "og": true
   },
   {
     "id": "471499692245516289",
     "name": "Mônica",
-    "birthday": "22-12"
+    "birthday": "22-12",
+    "og": false
   },
   {
     "id": "203530363035713536",
     "name": "Garbini",
-    "birthday": "24-12"
+    "birthday": "02-12",
+    "year": 2002,
+    "og": true
   }
 ]
