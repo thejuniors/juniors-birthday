@@ -5,7 +5,7 @@ import {
 } from "../services/birthday.js";
 
 export function dailyBirthday(client) {
-  cron.schedule("31 15 * * *", async () => {
+  cron.schedule("0 9 * * *", async () => {
     const channel = client.channels.cache.get(process.env.CHANNEL_ID);
     if (!channel) return;
 
