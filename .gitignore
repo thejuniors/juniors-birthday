@@ -18,3 +18,7 @@ Thumbs.db
 # --- LOGS ---
 logs/
 *.log
+
+
+# --- DISCLOUD ZIP ---
+*.zip
